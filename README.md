@@ -119,7 +119,7 @@ node scanner.js <room_name> <uuid_beacon_list>
 ```
 For example:
 ```
-node scanner.js LivingRoomTIR AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA 50765CB7-D9EA-4E21-99A4-FA879613A492
+node scanner.js LivingRoom AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA 50765CB7-D9EA-4E21-99A4-FA879613A492
 ```
 - Snapcast client:
 
@@ -131,19 +131,7 @@ snapclient --hostID <room_name>
 ```
 For example:
 ```
-snapclient --hostID LivingRoomTIR
+snapclient --hostID LivingRoom
 ```
 
-### Smartphone
-Your phone (or other device) should work as a beacon, therefore download and install a beacon simulation app e.g. [Beacon Simulator](https://play.google.com/store/apps/details?id=net.alea.beaconsimulator&hl=pl).
 
-## Possible improvements
-This project is just a Proof-of-Concept, therefore the following are just a few possibilities for further development:
-- Determine the room the user is in based on more Raspberry Pi's in the room to minimize errors due to signal reflections.
-- Adding support for smartwatches and smartbands for user location instead of a smartphone
-- Adding smooth volume changes as the user moves between rooms, rather than abruptly muting the sound. 
-
-## Articles worth mention
-- https://medium.com/the-monolith/how-to-build-your-open-source-multi-provider-and-multi-room-sound-system-4015e761ce7c
-- https://www.home-assistant.io/blog/2016/02/18/multi-room-audio-with-snapcast/
-- https://webworxshop.com/multi-room-audio-system-indoor-and-outdoor-audio-with-snapcast-and-mopidy/
